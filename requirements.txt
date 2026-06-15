@@ -1,0 +1,19 @@
+numpy
+pandas
+
+# for Face  Recognition
+
+scikit-learn
+dlib-bin  #detect face in a rectangle
+
+git+https://github.com/ageitgey/face_recognition_models  # dots on face is done by this
+setuptools<70.0.0
+
+#Database
+supabase
+bcrypt  #do hashing
+
+segno #url to qr code
+pillow  #image preprocessing
+
+streamlit #frontend
