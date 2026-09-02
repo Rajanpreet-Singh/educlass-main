@@ -1,3 +1,4 @@
+streamlit #frontend
 numpy
 pandas
 
@@ -16,4 +17,7 @@ bcrypt  #do hashing
 segno #url to qr code
 pillow  #image preprocessing
 
-streamlit #frontend
+
+# for voice recognition
+librosa
+resemblyzer
