@@ -25,3 +25,4 @@ resemblyzer
 python-dotenv
 
 langgraph
+langchain-groq
