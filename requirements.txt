@@ -23,3 +23,5 @@ librosa
 resemblyzer
 
 python-dotenv
+
+langgraph
