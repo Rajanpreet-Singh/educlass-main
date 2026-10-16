@@ -1,5 +1,3 @@
-
-
 import dlib
 import numpy as np
 import face_recognition_models
@@ -19,7 +17,7 @@ def load_dlib_models():
     )
 
     facerec = dlib.face_recognition_model_v1(
-        face_recognition_models.face_recognition_model_location() #Convert into facial embeddings into 128D vector
+        face_recognition_models.face_recognition_model_location() #Convert facial embeddings into 128D vector
     )
 
     return detector, sp, facerec
@@ -98,7 +96,7 @@ def predict_attendance(class_image_np):
 
         best_match_score = np.linalg.norm(student_embedding - encoding)
 
-        resemblance_threshold = 0.4
+        resemblance_threshold = 0.47
 
         if best_match_score <= resemblance_threshold:
             detected_student[predicted_id] = True

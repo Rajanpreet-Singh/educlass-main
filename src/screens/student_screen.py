@@ -13,6 +13,9 @@ import time
 
 from src.components.dialog_enroll import enroll_dialog
 from src.components.subject_card import subject_card
+from src.components.student_assistant_chat import (
+    student_assistant_chat,
+)
 
 def student_dashboard():
     student_data = st.session_state.student_data
@@ -92,6 +95,8 @@ def student_dashboard():
                 footer_callback=lambda sub_id=sub['subject_id']: unenroll_button(sub_id)
             )
     footer_dashboard()
+    st.divider()
+    student_assistant_chat()
 
 
 def student_screen():

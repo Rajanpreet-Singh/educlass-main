@@ -20,6 +20,8 @@ import pandas as pd
 
 from src.database.config import supabase
 
+from src.components.teacher_analytics_chat import teacher_analytics_chat
+
 
 from src.components.dialog_voice_attendance import voice_attendance_dialog
 def teacher_screen():
@@ -84,7 +86,7 @@ def teacher_dashboard():
         teacher_tab_attendance_records()
 
     
-
+    teacher_analytics_chat()
 
     footer_dashboard()
 

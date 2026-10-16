@@ -5,19 +5,16 @@ import streamlit as st
 def style_background_home():
 
     st.markdown("""
-        <style>
+                <style>
+        .stApp {
+    background: #4F5FE8 !important;
+}
 
-                .stApp {
-                    background: #5865F2 !important;
-                }
-
-                .stApp div[data-testid="stColumn"]{
-                    background-color:#E0E3FF !important;
-                    padding:2.5rem !important;
-                    border-radius: 5rem !important;
-                    }
-        </style>  
-
+.stApp div[data-testid="stColumn"] {
+    background-color: #FFFFFF !important;
+    padding: 2.5rem !important;
+    border-radius: 3rem !important;
+}
                 """
             ,unsafe_allow_html=True)
     
@@ -58,33 +55,46 @@ def style_base_layout():
             }
 
             h1 {
-                font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 3.5rem !important;
-                line-height:1.1 1important;
-                margin-bottom:0rem !important;
-            }
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 3.2rem !important;
+    font-weight: 800 !important;
+    line-height: 1.05 !important;
+    margin-bottom: 0rem !important;
+    letter-spacing: -1.5px !important;
+    transform: scaleX(0.95);
+    color: #FFFFFF !important;
+}
                 
 
-            h2 {
-                font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 2rem !important;
-                line-height:0.9 !important;
-                margin-bottom:0rem !important;
-            }
+           h2 {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.4rem !important;
+    letter-spacing: -0.7px !important;
+    transform: none !important;
+    color: #18234A !important;
+}
                 
             h3, h4, p {
                 font-family: 'Outfit', sans-serif;    
             }
                 
 
-            button{
-                border-radius: 1.5rem !important;
-                background-color: #5865F2 !important;
-                color: white !important;
-                padding: 10px 20px !important;
-                border: none !important;
-                transition: transform 0.25s ease-in-out !important;
-                }
+            button {
+    border-radius: 1.5rem !important;
+    background-color: #3548D4 !important;
+    color: #FFFFFF !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    transition: transform 0.25s ease-in-out !important;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background-color: #2637B5 !important;
+}
 
             button[kind="secondary"]{
                 border-radius: 1.5rem !important;
@@ -104,8 +114,7 @@ def style_base_layout():
                 transition: transform 0.25s ease-in-out !important;
                 }
 
-            button:hover{
-                transform :scale(1.05)}
+            
         </style>  
 
                 """
