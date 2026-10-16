@@ -21,3 +21,5 @@ pillow  #image preprocessing
 # for voice recognition
 librosa
 resemblyzer
+
+python-dotenv
